@@ -197,7 +197,6 @@ public class NowPlayingActivity extends Activity {
 			} else {
 				intent = new Intent(this, RemoteActivity.class);
 			}
-			intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
 			startActivity(intent);
 			return true;
 		case MENU_MONITOR_MODE:

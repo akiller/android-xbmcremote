@@ -283,7 +283,6 @@ public class HomeController extends AbstractController implements INotifiableCon
 						} else {
 							intent = new Intent(v.getContext(), RemoteActivity.class);
 						}
-						intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
 						break;
 					case HOME_ACTION_MUSIC:
 						intent = new Intent(v.getContext(), MusicLibraryActivity.class);

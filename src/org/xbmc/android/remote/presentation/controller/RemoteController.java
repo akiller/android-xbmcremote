@@ -404,7 +404,6 @@ public class RemoteController extends AbstractController implements INotifiableC
 				break;
 			case MENU_SWITCH_GESTURE:
 				intent = new Intent(mActivity, GestureRemoteActivity.class);
-				intent.addFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
 				break;
 			case MENU_XBMC_EXIT:
 				mEventClientManager.sendButton("R1", ButtonCodes.REMOTE_POWER, false, true, true, (short)0, (byte)0);

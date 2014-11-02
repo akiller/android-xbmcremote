@@ -166,7 +166,6 @@ public class GestureRemoteActivity extends Activity {
 				break;
 			case MENU_SWITCH_BUTTONS:
 				intent = new Intent(this, RemoteActivity.class);
-				intent.addFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
 				break;
 			case MENU_ENTER_TEXT:
 				showDialog(RemoteController.DIALOG_SENDTEXT);

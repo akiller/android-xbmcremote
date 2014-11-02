@@ -137,7 +137,6 @@ public abstract class AbsListActivity extends Activity {
 				} else {
 					intent = new Intent(this, RemoteActivity.class);
 				}
-				intent.addFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
 				startActivity(intent);
 				return true;
 			case MENU_NOW_PLAYING:
